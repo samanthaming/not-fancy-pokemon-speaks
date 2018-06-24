@@ -1,0 +1,115 @@
+/* ==================
+ *  VARIABLES
+ * ================== */
+:root {
+  --color-dark-gray: #777;
+  --color-light-gray: #eee;
+  --color-gray: #bbb;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-light-blue: #2a75bb;
+  --color-yellow: #ffcb05;
+}
+/* ==================
+ *  BASE
+ * ================== */
+body {
+  font-family: 'Comfortaa', Helvetica, sans-serif;
+}
+.outer-container {
+  background: url("images/background.png") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.inner-container{
+  padding-top: 10%;
+  height: 100%;
+}
+/* ==================
+ *  APP
+ * ================== */
+.bubble {
+  border-radius: 1.875rem;
+  border: 0.3125rem solid var(--color-yellow);
+  background: var(--color-light-blue);
+  color: var(--color-white);
+  opacity: 0.9;
+  min-height: 5rem;
+  text-align: center;
+}
+.bubble i {
+  float: right;
+  color: var(--color-gray);
+  margin-right: 0.9375rem;
+}
+.bubble-tiny {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble-tiny h1 {
+  font-size: 1em;
+}
+.pokemons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3.125rem;
+}
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.9375rem;
+}
+.pokemon-image {
+  margin-bottom: 1.25rem;
+  height: 6.25rem;
+}
+.pokemon-image img {
+  transition: all 0.1s ease;
+}
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.125rem;
+  height: 2.8125rem;
+  border-radius: 0.3125rem;
+  background-color: var(--color-light-gray);
+  border: 0.0625rem solid var(--color-dark-gray);
+  transition: all .07s ease;
+  color: var(--color-dark-gray);
+}
+.pokemon.is-selected .key {
+  border-color: var(--color-yellow);
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem var(--color-yellow);
+  color: var(--color-black);
+  font-weight: bold;
+}
+.pokemon.is-selected img {
+  transform: scale(1.3);
+}
+/* ==================
+ *  SOCIAL MEDIA
+ * ================== */
+ .social-columns {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  padding-bottom: 0.625rem;
+  font-size: 0.625rem;
+  color: hsl(0, 0%, 90%);
+  width: 100%;
+}
+.social-columns .column {
+  padding: 0.4rem;
+  text-align: center;
+}

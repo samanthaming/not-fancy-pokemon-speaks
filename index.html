@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+  <title>Pokemon Speaks!</title>
+</head>
+<body>
+  <!-- app -->
+  <div id="app">
+    <div class="outer-container">
+      <div class="inner-container">
+        <div
+          v-bind:class="[
+            {'bubble-tiny': !talk},
+            'bubble'
+          ]">
+          <h1>
+            <span v-if="talk">
+                {{ talk.toLowerCase() }}!
+                <i class="fa fa-volume-up"></i>
+            </span>
+            <span v-else>
+                Press Key to hear Pokemon Speak!
+            </span>
+          </h1>
+        </div>
+        <div class="pokemons">
+          <div
+            v-for="pokemon in pokemons"
+            :keys="pokemon.code"
+            v-bind:class="[
+              {'is-selected': pokemon.selected},
+              'pokemon'
+            ]">
+            <div class="pokemon-image">
+                <img :src="`images/${pokemon.file}.png`">
+            </div>
+            <div class="key">
+              {{ pokemon.key.toUpperCase() }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- My Social Media-->
+      <div class="columns is-mobile social-columns">
+        <div class="column">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <span>samantha_ming</span>
+        </div>
+        <div class="column">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          hi.samanthaming
+        </div>
+        <div class="column">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          samanthaming
+        </div>
+      </div><!--end social media-->
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script src="vue.js"></script>
+</body>
+</html>
