@@ -16,6 +16,7 @@ A simple, not fancy at all, Pokemon Speak web app. Make the Pokemon speak using 
 <br>
 
 Play around with it on [CodePen](https://codepen.io/samanthaming/pen/MXBYNJ)
+See it live! [website](https://samanthaming.github.io/not-fancy-pokemon-speaks/)
 
 <br>
 
@@ -24,7 +25,7 @@ Play around with it on [CodePen](https://codepen.io/samanthaming/pen/MXBYNJ)
 
 # Notes
 
-Here are the general steps. To create your own Pokemon Speak
+Here are the general steps to create your own Pokemon Speak
 
 ## 1. Listen to Keyboard Events
 
@@ -38,7 +39,7 @@ new Vue({
 })
 ```
 
-### 2. Responding to Keyboard Events
+## 2. Responding to Keyboard Events
 
 ```javascript
 methods: {
