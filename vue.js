@@ -24,7 +24,8 @@ new Vue({
     ]
   },
   created () {
-    window.addEventListener('keydown', this.selectPokemon)
+    window.addEventListener('keydown', this.selectPokemon);
+    window.addEventListener('keydown', this.showWelcomeMessage);
   },
   methods: {
     selectPokemon(e) {
@@ -40,11 +41,7 @@ new Vue({
 
       setTimeout(() => {
         selectedPokemon.selected = false;
-      }, 1000)
-
-      setTimeout(() => {
-        this.resetTalk()
-      }, 5000)
+      }, 1000);
     },
     playSound(sound) {
       var audio = new Audio(sound);
@@ -52,6 +49,11 @@ new Vue({
     },
     resetTalk() {
       this.talk = '';
+    },
+    showWelcomeMessage() {
+      setTimeout(() => {
+        this.talk = '';
+      }, 5000);
     }
   }
 });

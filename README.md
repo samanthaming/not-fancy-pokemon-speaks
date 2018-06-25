@@ -84,4 +84,5 @@ methods: {
 - [JS Event KeyCodes by WesBos](http://keycode.info/)
 - Images from [Pokemon Sprites Pack](https://www.pokemongoapkfree.com/pokemon-sprites-pack-images/)
 - Sound clips from YouTube
+- [Stack overflow: How to detect idle time in JS](https://stackoverflow.com/questions/667555/how-to-detect-idle-time-in-javascript-elegantly)
 - This project was inspired by WesBos' [Javascript30](https://javascript30.com/) - Drum Kit lecture.
