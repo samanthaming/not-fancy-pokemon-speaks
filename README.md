@@ -10,7 +10,6 @@ A simple, not fancy at all, Pokemon Speak web app. Make the Pokemon speak using 
 - Vue
 - Font Awesome
 - Google Fonts - Comfortaa
-- Sound clips from YouTube
 
 <br>
 
@@ -27,7 +26,7 @@ Here are the general steps to create your own Pokemon Speak
 
 ## 1. Listen to Keyboard Events
 
-Vue doesn't supper global key press (at least I couldn't figure it out), so we need to `addEventListener` to the window.
+Vue doesn't support global key press (at least I couldn't figure it out), so we need to `addEventListener` to the window.
 
 ```javascript
 new Vue({ 
@@ -64,11 +63,12 @@ methods: {
 ```javascript
 methods: {
   selectPokemon(e) {
-  
+    
     // Pass in the path of your sound file
     this.playSound(`sounds/${selectedPokemon.file}.mp3`)
   },
   playSound(sound) {
+    
     // Create the audio
     var audio = new Audio(sound);
     
@@ -83,4 +83,5 @@ methods: {
 - [Vue Key Modifiers](https://vuejs.org/v2/guide/events.html#Key-Modifiers)
 - [JS Event KeyCodes by WesBos](http://keycode.info/)
 - Images from [Pokemon Sprites Pack](https://www.pokemongoapkfree.com/pokemon-sprites-pack-images/)
+- Sound clips from YouTube
 - This project was inspired by WesBos' [Javascript30](https://javascript30.com/) - Drum Kit lecture.
