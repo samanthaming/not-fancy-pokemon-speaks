@@ -15,7 +15,7 @@ A simple, not fancy at all, Pokemon Speak web app. Make the Pokemon speak using 
 <br>
 
 Play around with it on [CodePen](https://codepen.io/samanthaming/pen/MXBYNJ)  
-[See it live!](https://samanthaming.github.io/not-fancy-pokemon-speaks/)
+Or see it live! [here](https://samanthaming.github.io/not-fancy-pokemon-speaks/)
 
 <br>
 
