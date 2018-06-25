@@ -2,18 +2,20 @@
 
 A simple, not fancy at all, Pokemon Speak web app. Make the Pokemon speak using your keyboard!
 
-Features include:
+**Features include:**
 - Hear the sound when Pokemon speaks
 - See the text when Pokemon speaks
 
-Built using:
+**Built using:**
 - Vue
 - Font Awesome
 - Google Fonts - Comfortaa
 - Sound clips from YouTube
 - Images from [Pokemon Sprites Pack](https://www.pokemongoapkfree.com/pokemon-sprites-pack-images/)
 
-Play around with it on [CodePen](https://codepen.io/samanthaming/pen/NzvKZd)
+<br>
+
+Play around with it on [CodePen](https://codepen.io/samanthaming/pen/MXBYNJ)
 
 <br>
 
@@ -36,7 +38,7 @@ new Vue({
 })
 ```
 
-## 2. Responding to the Keyboard Events
+### 2. Responding to Keyboard Events
 
 ```javascript
 methods: {
@@ -54,7 +56,6 @@ methods: {
 
     // Update the property of the selected pokemon
     selectedPokemon.selected = true;
-
   },
 }
 ```
