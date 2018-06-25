@@ -13,15 +13,13 @@ A simple, not fancy at all, Pokemon Speak web app. Make the Pokemon speak using 
 - Sound clips from YouTube
 - Images from [Pokemon Sprites Pack](https://www.pokemongoapkfree.com/pokemon-sprites-pack-images/)
 
-<br>
-
 Play around with it on [CodePen](https://codepen.io/samanthaming/pen/MXBYNJ)
-See it live! [website](https://samanthaming.github.io/not-fancy-pokemon-speaks/)
+
+[See it live!](https://samanthaming.github.io/not-fancy-pokemon-speaks/)
 
 <br>
 
 ![App](images/not-fancy-pokemon-speaks.png)
-
 
 # Notes
 
