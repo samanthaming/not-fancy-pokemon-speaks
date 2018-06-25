@@ -3,8 +3,9 @@
 A simple, not fancy at all, Pokemon Speak web app. Make the Pokemon speak using your keyboard!
 
 **Features include:**
-- Hear the sound when Pokemon speaks
-- See the text when Pokemon speaks
+- Play sound when Pokemon speaks
+- Display text when Pokemon speaks
+- Clear text and show welcome message when inactive
 
 **Built using:**
 - Vue
