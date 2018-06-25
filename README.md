@@ -11,10 +11,10 @@ A simple, not fancy at all, Pokemon Speak web app. Make the Pokemon speak using 
 - Font Awesome
 - Google Fonts - Comfortaa
 - Sound clips from YouTube
-- Images from [Pokemon Sprites Pack](https://www.pokemongoapkfree.com/pokemon-sprites-pack-images/)
 
-Play around with it on [CodePen](https://codepen.io/samanthaming/pen/MXBYNJ)
+<br>
 
+Play around with it on [CodePen](https://codepen.io/samanthaming/pen/MXBYNJ)  
 [See it live!](https://samanthaming.github.io/not-fancy-pokemon-speaks/)
 
 <br>
@@ -82,4 +82,5 @@ methods: {
 
 - [Vue Key Modifiers](https://vuejs.org/v2/guide/events.html#Key-Modifiers)
 - [JS Event KeyCodes by WesBos](http://keycode.info/)
+- Images from [Pokemon Sprites Pack](https://www.pokemongoapkfree.com/pokemon-sprites-pack-images/)
 - This project was inspired by WesBos' [Javascript30](https://javascript30.com/) - Drum Kit lecture.
