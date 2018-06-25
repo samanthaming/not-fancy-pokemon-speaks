@@ -25,7 +25,7 @@ new Vue({
   },
   created () {
     window.addEventListener('keydown', this.selectPokemon);
-    window.addEventListener('keydown', this.showWelcomeMessage);
+    window.addEventListener('keyup', this.showWelcomeMessage);
   },
   methods: {
     selectPokemon(e) {
@@ -51,8 +51,10 @@ new Vue({
       this.talk = '';
     },
     showWelcomeMessage() {
-      setTimeout(() => {
-        this.talk = '';
+      let t;
+      clearTimeout(t);
+      t = setTimeout(() => {
+        this.resetTalk();
       }, 5000);
     }
   }
