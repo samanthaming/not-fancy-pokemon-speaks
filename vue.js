@@ -1,3 +1,5 @@
+var timer = 0;
+
 new Vue({
   el: '#app',
   data: {
@@ -25,7 +27,14 @@ new Vue({
   },
   created () {
     window.addEventListener('keydown', this.selectPokemon);
-    window.addEventListener('keyup', this.showWelcomeMessage);
+
+    setInterval(() => {
+      timer++;
+      if(timer === 3) {
+        this.resetTalk();
+      }
+    }, 1000);
+
   },
   methods: {
     selectPokemon(e) {
@@ -35,6 +44,7 @@ new Vue({
 
       if(!keys.includes(code)) return;
 
+      timer = 0;
       selectedPokemon.selected = true;
       this.talk = selectedPokemon.file;
       this.playSound(`sounds/${selectedPokemon.file}.mp3`)
@@ -50,12 +60,5 @@ new Vue({
     resetTalk() {
       this.talk = '';
     },
-    showWelcomeMessage() {
-      let t;
-      clearTimeout(t);
-      t = setTimeout(() => {
-        this.resetTalk();
-      }, 5000);
-    }
   }
 });
